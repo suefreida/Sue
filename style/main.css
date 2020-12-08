@@ -289,7 +289,6 @@ textarea {
   resize: vertical;
 }
 
-
 #button-send {
   font-size: 1.5rem;
   font-family: 'Montserrat Semibold';
@@ -313,8 +312,6 @@ textarea {
 .submit:hover {
   color: rgb(250, 132, 124);
 }
-
-
 
 /* footer section */
 
