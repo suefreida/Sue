@@ -322,51 +322,7 @@ textarea {
 
 /* footer section */
 
-footer {
-  background-color: rgb(37, 37, 35);
-  width: 100vw;
-  height: 100%;
-  font-size: .75rem;
-}
 
-.second-nav {
-  padding-top: 2rem;
-  display: flex;
-  justify-content: center;
-}
-
-.second-nav ul {
-  list-style: none;
-}
-
-.second-nav li a {
-  display: flex;
-  justify-content: center;
-  text-decoration: none;
-  color: rgb(255, 255, 255);
-}
-
-.second-nav li {
-  list-style: none;
-  padding: 1.5rem 1rem 0 1rem;
-}
-
-.social {
-  display: flex;
-  justify-content: center;
-}
-
-.fab{
-  color: rgb(245, 241, 237);
-  padding: 2rem 1.5rem;
-}
-
-.domain {
-  display: flex;
-  justify-content: center;
-  color: rgb(245, 241, 237);
-  padding-bottom: 2.5rem;
-}
 
 /* back to top button */
 
