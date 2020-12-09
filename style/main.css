@@ -36,13 +36,13 @@ a {
 }
 
 .freida {
-  font-family: 'Montserrat Semibold' sans-serif;;
+  font-family: 'Montserrat Semibold', sans-serif;;
   font-size: 1.5rem;
 } 
 
 .header {
   background-color: rgb(255, 255, 255);
-  box-shadow: 1px 1px 4px 0 rgba(37,37,35,.1);
+  box-shadow: 0.0625rem 0.0625rem 0.25rem 0 rgba(37,37,35,.1);
   position: fixed;
   width: 100%;
   z-index: 3;
@@ -58,7 +58,7 @@ a {
 
 .header li a {
   display: block;
-  padding: 20px 20px;
+  padding: 1.25rem 1.25rem;
   border-right: 1px solid rgb(244, 244, 244);
   text-decoration: none;
 }
@@ -72,7 +72,7 @@ a {
   display: block;
   float: left;
   font-size: 2em;
-  padding: 10px 20px;
+  padding: 0.625rem 1.25rem;
   text-decoration: none;
 }
   
@@ -90,7 +90,7 @@ a {
   cursor: pointer;
   display: flex;
   float: right;
-  padding: 28px 20px;
+  padding: 1.75rem 1.25rem;
   position: relative;
   user-select: none;
 }
@@ -98,10 +98,10 @@ a {
 .header .menu-icon .navicon {
   background: rgb(51, 51, 51);
   display: block;
-  height: 2px;
+  height: 0.125rem;
   position: relative;
   transition: all .2s ease-out;
-  width: 18px;
+  width: 1.125rem;
 }
 
 .header .menu-icon .navicon:before,
@@ -116,11 +116,11 @@ a {
 }
 
 .header .menu-icon .navicon:before {
-  top: 5px;
+  top: 0.3125rem;
 }
 
 .header .menu-icon .navicon:after {
-  top: -5px;
+  top: -0.3125rem;
 }
 
 /* menu button */
@@ -130,7 +130,7 @@ a {
 }
   
 .header .menu-button:checked ~ .menu {
-  max-height: 240px;
+  max-height: 15rem;
 }
 
 .header .menu-button:checked ~ .menu-icon .navicon {
@@ -162,7 +162,7 @@ a {
 }
 
 .projects-container > h1 {
-  font-family: 'Montserrat Semibold';
+  font-family: 'Montserrat Semibold', sans-serif;
   font-size: 2rem;
   text-align: center;
   padding-top: 8rem;  
@@ -216,8 +216,7 @@ ol.flickity-page-dots{
 }
 
 .about-container > h1 {
-  font-family: 'Montserrat Semibold';
-  font-size: 2rem;
+  font-family: 'Montserrat Semibold', sans-serif;
   text-align: center;
   padding-top: 5rem;  
 }
@@ -244,7 +243,7 @@ ol.flickity-page-dots{
 }
 
 .contact-container > h1 {
-  font-family: 'Montserrat Semibold';
+  font-family: 'Montserrat Semibold', sans-serif;
   font-size: 2rem;
   text-align: center;
   padding-top: 5rem;
@@ -299,7 +298,7 @@ textarea {
 
 #button-send {
   font-size: 1.5rem;
-  font-family: 'Montserrat Semibold';
+  font-family: 'Montserrat Semibold', sans-serif;
   letter-spacing: .05rem;
   width: 100%;
   border: none;
@@ -332,9 +331,9 @@ footer {
 .domain {
   display: flex;
   justify-content: center;
-  font-size: .75rem;
+  font-size: .9rem;
   color: rgb(245, 241, 237);
-  padding-top: 2.5rem;
+  padding-top: 5rem;
   padding-bottom: 5rem;
 }
 
@@ -344,22 +343,22 @@ footer {
   position: fixed;
   bottom: 1.5rem;
   right: 1.5rem;
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   width: 50px;
   height: 50px;
-  background-color: #fff;
-  color: #333;
+  background-color: rgb(255, 255, 255);
+  color: rgb(51, 51, 51);
   cursor: pointer;
   outline: none;
-  border: 3px solid #333;
+  border: 0.0625rem solid rgb(51, 51, 51);
   border-radius: 50%;
   transition-duration: 0.2s;
   transition-timing-function: ease-in-out;
   transition-property: background-color, color;
 }
 #back-to-top-btn:hover, #back-to-top-btn:focus {
-  background-color: #333;
-  color: #fff;  
+  background-color: rgb(51, 51, 51);
+  color: rgb(255, 255, 255);  
 }
 
 /* Animations */
