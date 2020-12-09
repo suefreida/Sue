@@ -36,7 +36,7 @@ a {
 }
 
 .freida {
-  font-family: 'Montserrat Semibold';
+  font-family: 'Montserrat Semibold' sans-serif;;
   font-size: 1.5rem;
 } 
 
@@ -123,7 +123,7 @@ a {
   top: -5px;
 }
 
-/* menu btn */
+/* menu button */
   
 .header .menu-button {
   display: none;
@@ -183,13 +183,20 @@ a {
 .carousel {
   width:100%;
   height: auto;
-
 }
 
 .carousel-cell {
   width: 100%;
   max-height: 100vh;
   counter-increment: carousel-cell;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.carousel-cell img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 ol.flickity-page-dots{
@@ -205,6 +212,7 @@ ol.flickity-page-dots{
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: -1rem;
 }
 
 .about-container > h1 {
@@ -328,6 +336,65 @@ footer {
   color: rgb(245, 241, 237);
   padding-top: 2.5rem;
   padding-bottom: 5rem;
+}
+
+/* back to top button */
+
+#back-to-top-btn {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  font-size: 1.75rem;
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
+  outline: none;
+  border: 3px solid #333;
+  border-radius: 50%;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  transition-property: background-color, color;
+}
+#back-to-top-btn:hover, #back-to-top-btn:focus {
+  background-color: #333;
+  color: #fff;  
+}
+
+/* Animations */
+.btnEntrance {
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+  animation-name: btnEntrance;
+}
+
+@keyframes btnEntrance {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.btnExit {
+  animation-duration: 0.25s;
+  animation-fill-mode: both;  
+  animation-name: btnExit;
+}
+
+/* fadeOutDown */
+@keyframes btnExit {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
 }
 
 /* media queries */
